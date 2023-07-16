@@ -1,0 +1,20 @@
+<%- include("header") -%>
+<div class="wrap , review">
+    <form action="/Reviews" method="post" class="form-signin">
+        <h1 class="signin-heading">Care To Contibute</h1>
+        <input  class="form-control" type="text" name="email" label="Email" placeholder="Email address" required="" autofocus="" />
+        <textarea class="form-control" type="text" name="textarea" placeholder="Add a review"  autofocus="" rows="10" cols="100"></textarea>
+        <button class="acc-btn , note-btn" name="Signin" value="Login" type="Submit">+</button>
+    </form>
+    <div class="item-head">
+    <% listitem.forEach(function(item){ %>
+        <div class=" form-signin , item">
+            <h3><%=item.email%></h3>
+            <p><%=item.password%></p>
+            <h3><%=item.Date%></h3>
+        </div>
+    <% }) %>
+    </div>
+
+</div>
+<%- include("footer") -%>

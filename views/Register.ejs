@@ -1,0 +1,33 @@
+<%- include("header") -%>
+<div class="register">
+    <div class="reg">
+        <h1>Sign up</h1>
+        <div class="reg-in">
+            <form action="/Register" method="post">
+                <div class="reg-in-f">
+                    <img src="/email.png">
+                    <input  class="form-control" type="text" name="email" placeholder="Email address" required="" autofocus="" />
+                </div>
+                <div class="reg-in-f">
+                    <img src="/lock.png">
+                    <input   class="form-control" type="password" name="password"  placeholder="Password" required=""/>
+                </div>
+                <div class="reg-in-f">
+                    <img src="/key.png">
+                    <input   class="form-control" type="password" name="confirm-password"  placeholder="Confirm Password" required=""/>
+                </div>
+                <div>
+                    <input type="checkbox" required=""/>
+                    <label>
+                        I agree all statements in <a href="termsofservice">Terms of service</a>
+                    </label>
+                </div>
+                <button class="acc-btn , reg-btn" name="account" value="Login" type="Submit">Register</button> 
+            </form>
+    
+        </div>
+    </div>
+    <img src="/signup.jpg">
+</div>
+
+<%- include("footer") -%>

@@ -1,0 +1,20 @@
+<%- include("header") -%>
+<div class="form-group">
+  <div class="login-head">Customer Login</div>
+ <div class="wrap">
+    <form action="/login" method="post" class="form-signin">
+        <h1 class="signin-heading">Registered Customers</h1>
+        <p>If you have an account, sign in with your email address.</p>
+        <input  class="form-control" type="text" name="email" label="Email" placeholder="Email address" required="" autofocus="" />
+        <input   class="form-control" type="password" name="password" label="Password" placeholder="Password" required=""/>
+        <button class="acc-btn" name="Signin" value="Login" type="Submit">Sign In</button>
+        <div class="last-login">* Required Fields</div>
+    </form>
+    <form action="/login" method="post" class="form-signin">
+        <h1 class="signin-heading">New Customers</h1>
+        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
+        <button class="acc-btn" name="acc" value="register" type="Submit">Create an Account</button>
+    </form>
+ </div>
+</div>
+<%- include("footer") -%>

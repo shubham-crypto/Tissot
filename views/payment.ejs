@@ -1,0 +1,15 @@
+<%- include("header") -%>
+<form action="/pay" method="post" class="form-signin , contact-details , pay-d">
+    <h3>NAME</h3>
+    <input  class="form-control" type="text" name="email" label="Email" placeholder="Name" required="" autofocus="" />
+    <h3>EMAIL</h3>
+    <input  class="form-control" type="text" name="email" label="Email" placeholder="Email address" required="" autofocus="" />
+
+    <h3>ADDRESS</h3>
+    <textarea class="form-control" type="text" name="textarea" placeholder="Address"  autofocus="" rows="5" cols="50"></textarea>
+    
+    <h3>CONTACT NO</h3>
+    <input  class="form-control" type="text" name="email" placeholder="Phone no"  required="" autofocus="" />
+    <button class="acc-btn , service-btn" name="acc" value="register" type="Submit">CONFIRM</button>
+</form>
+<%- include("footer") -%>

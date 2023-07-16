@@ -1,0 +1,25 @@
+<%- include("header") -%>
+<div class="head-home , newsletter" >
+    <img class="test , news-img" src="/news.webp">
+    <div class="reg-in  news-in" >
+        <form class="news-form" action="/newsletter" method="post">
+            <div class="reg-in-f">
+                <input  class="form-control" type="text" name="email" placeholder="Email address" required="" autofocus="" />
+            </div>
+            <div class="reg-in-f">
+                <input   class="form-control" type="text" name="fname"  placeholder="First Name" required=""/>
+            </div>
+            <div class="reg-in-f">
+                <input   class="form-control" type="text" name="lname"  placeholder="Last Name" required=""/>
+            </div>
+            <div>
+                <input type="checkbox" required=""/>
+                <label>
+                    I agree all statements in <a class="newsa" href="termsofservice">Terms of service</a>
+                </label>
+            </div>
+            <button class="acc-btn , news-btn" name="account" value="Login" type="Submit">Sign Up</button> 
+        </form>
+    </div>
+</div>
+<%- include("footer") -%>
